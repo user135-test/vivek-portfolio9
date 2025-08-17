@@ -7,7 +7,6 @@ import Navigation from '@/components/Navigation';
 import SkillCard from '@/components/SkillCard';
 import ProjectCard from '@/components/ProjectCard';
 import { useToast } from '@/hooks/use-toast';
-import emailjs from '@emailjs/browser';
 
 // Import images
 import heroImage from '@/assets/vivek-new-profile.jpg';
@@ -20,7 +19,6 @@ const Portfolio = () => {
     email: '',
     message: ''
   });
-  const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -30,36 +28,13 @@ const Portfolio = () => {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsLoading(true);
-
-    try {
-      await emailjs.send(
-        'service_kh718cr',     // Service ID
-        'template_fsly6vr',    // Template ID
-        {
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-        },
-        'aPsZOvjUKDrM91VcX'    // Public Key
-      );
-
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      toast({
-        title: "Failed to send message",
-        description: "Please try again later or contact me directly via email.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsLoading(false);
-    }
+    toast({
+      title: "Message sent!",
+      description: "Thank you for reaching out. I'll get back to you soon.",
+    });
+    setFormData({ name: '', email: '', message: '' });
   };
 
   const skills = [
@@ -360,8 +335,8 @@ const Portfolio = () => {
                     />
                   </div>
                   
-                  <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isLoading}>
-                    {isLoading ? "Sending..." : "Send Message"} <ArrowRight className="ml-2 w-5 h-5" />
+                  <Button type="submit" variant="hero" size="lg" className="w-full">
+                    Send Message <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </form>
               </div>

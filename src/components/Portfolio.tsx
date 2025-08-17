@@ -9,7 +9,7 @@ import ProjectCard from '@/components/ProjectCard';
 import { useToast } from '@/hooks/use-toast';
 
 // Import images
-import heroImage from '@/assets/vivek-profile.jpg';
+import heroImage from '@/assets/vivek-new-profile.jpg';
 import studyBuddyImage from '@/assets/studybuddy-project.jpg';
 import wanderlustImage from '@/assets/wanderlust-project.jpg';
 

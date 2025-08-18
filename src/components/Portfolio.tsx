@@ -121,7 +121,6 @@ const Portfolio = () => {
                   variant="hero" 
                   size="xl"
                   onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="animate-glow-pulse"
                 >
                   View Portfolio <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>

@@ -120,13 +120,11 @@ const Portfolio = () => {
                 <Button 
                   variant="hero" 
                   size="xl"
-                  onClick={() => {
-                    console.log('Portfolio button clicked');
-                    const portfolioElement = document.getElementById('portfolio');
-                    console.log('Portfolio element found:', portfolioElement);
-                    if (portfolioElement) {
-                      portfolioElement.scrollIntoView({ behavior: 'smooth' });
-                    }
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const element = document.getElementById('portfolio');
+                    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }}
                 >
                   View Portfolio

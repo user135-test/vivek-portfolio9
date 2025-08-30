@@ -122,7 +122,7 @@ const Portfolio = () => {
                   size="xl"
                   onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  View Portfolio <ArrowRight className="ml-2 w-5 h-5" />
+                  View Portfolio
                 </Button>
                 <Button 
                   variant="portfolio" 

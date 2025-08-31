@@ -82,16 +82,22 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: "EchoMeet – Real-time Video Conferencing Platform",
+      description: "Built a secure authentication system and lobby management flow for seamless meeting access. Designed and implemented a responsive UI workflow, ensuring smooth user navigation across devices. Integrated real-time peer-to-peer communication using WebRTC, achieving low-latency video calls and stable performance.",
+      tools: ["React.js", "Node.js", "WebRTC", "Socket.io", "Material UI"],
+      image: studyBuddyImage
+    },
+    {
+      title: "Wanderlust – Hotel Listing Platform", 
+      description: "A web-based platform for location-based hotel listings with real-time dynamic search, interactive cards, and geocoding integration.",
+      tools: ["NodeJs", "ExpressJs", "MongoDB", "EJS"],
+      image: wanderlustImage
+    },
+    {
       title: "AI Powered StudyBuddy Assistant",
       description: "AI-powered study partner for students providing roadmap generation and analysis with a user-friendly interface.",
       tools: ["React", "NodeJS", "ExpressJS", "Gemini"],
       image: studyBuddyImage
-    },
-    {
-      title: "Wanderlust – Hotel Listing Platform",
-      description: "A web-based platform for location-based hotel listings with real-time dynamic search, interactive cards, and geocoding integration.",
-      tools: ["NodeJs", "ExpressJs", "MongoDB", "EJS"],
-      image: wanderlustImage
     }
   ];
 

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, Code, Database, Globe, Mail, Phone, MapPin, Github, Linkedin, ExternalLink } from 'lucide-react';
+import { ArrowRight, Code, Database, Globe, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Server, Layers } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -219,7 +219,7 @@ const Portfolio = () => {
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto grid gap-8">
             <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover-lift hover-glow transition-all duration-300 animate-fade-in">
               <div className="flex items-start gap-6">
                 <div className="p-4 bg-primary/10 rounded-xl text-primary">
@@ -229,6 +229,34 @@ const Portfolio = () => {
                   <h3 className="text-2xl font-semibold text-foreground mb-4">Front-End Development</h3>
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     I design and build user-friendly, modern, and responsive web interfaces, ensuring excellent performance and smooth user experience. From concept to deployment, I create web applications that engage users and drive results.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover-lift hover-glow transition-all duration-300 animate-fade-in">
+              <div className="flex items-start gap-6">
+                <div className="p-4 bg-primary/10 rounded-xl text-primary">
+                  <Server className="w-8 h-8" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-foreground mb-4">Backend Development</h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    I build robust and scalable server-side applications with secure APIs, efficient database management, and optimized performance. From authentication systems to complex business logic, I ensure your backend architecture supports your application's growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover-lift hover-glow transition-all duration-300 animate-fade-in">
+              <div className="flex items-start gap-6">
+                <div className="p-4 bg-primary/10 rounded-xl text-primary">
+                  <Layers className="w-8 h-8" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-foreground mb-4">Full Stack Development</h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    I provide end-to-end web development solutions, seamlessly integrating frontend and backend technologies. From database design to user interface, I deliver complete web applications that are maintainable, scalable, and user-focused.
                   </p>
                 </div>
               </div>

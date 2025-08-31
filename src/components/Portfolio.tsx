@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, Code, Database, Globe, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Server, Layers } from 'lucide-react';
+import { ArrowRight, Code, Database, Globe, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Server, Layers, Wifi, Palette, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -65,18 +65,33 @@ const Portfolio = () => {
   const skills = [
     {
       icon: <Code className="w-6 h-6" />,
-      title: "Programming",
-      skills: ["C", "C++", "Python"]
+      title: "Programming Languages",
+      skills: ["C", "C++", "Python", "JavaScript", "TypeScript"]
     },
     {
       icon: <Globe className="w-6 h-6" />,
-      title: "Frontend",
-      skills: ["HTML", "CSS", "JavaScript", "Bootstrap", "React"]
+      title: "Frontend Development",
+      skills: ["HTML5", "CSS3", "JavaScript", "React.js", "Bootstrap", "Material UI", "Tailwind CSS"]
     },
     {
       icon: <Database className="w-6 h-6" />,
-      title: "Backend/Tools",
-      skills: ["Node.js", "Express.js", "MongoDB"]
+      title: "Backend & Database",
+      skills: ["Node.js", "Express.js", "MongoDB", "Socket.io", "RESTful APIs"]
+    },
+    {
+      icon: <Wifi className="w-6 h-6" />,
+      title: "Real-time Technologies",
+      skills: ["WebRTC", "Socket.io", "Peer-to-Peer Communication", "Video Conferencing", "Real-time Chat"]
+    },
+    {
+      icon: <Palette className="w-6 h-6" />,
+      title: "UI/UX & Design",
+      skills: ["Responsive Design", "Material UI", "Component Libraries", "User Interface Design", "Cross-platform Development"]
+    },
+    {
+      icon: <Shield className="w-6 h-6" />,
+      title: "Authentication & Security",
+      skills: ["User Authentication", "Secure Login Systems", "Session Management", "Data Protection", "Privacy Controls"]
     }
   ];
 

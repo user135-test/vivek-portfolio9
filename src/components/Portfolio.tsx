@@ -144,19 +144,26 @@ const Portfolio = () => {
                 <Button 
                   variant="hero" 
                   size="xl"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
+                  onClick={() => {
                     const element = document.getElementById('portfolio');
-                    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
                   }}
+                  className="cursor-pointer"
                 >
                   View Portfolio
                 </Button>
                 <Button 
                   variant="portfolio" 
                   size="xl"
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => {
+                    const element = document.getElementById('contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
+                  className="cursor-pointer"
                 >
                   Contact Me
                 </Button>

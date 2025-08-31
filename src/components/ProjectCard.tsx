@@ -23,7 +23,7 @@ const ProjectCard = ({ title, description, tools, image, link, githubLink }: Pro
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm text-foreground p-2 rounded-full hover:bg-background transition-all duration-200 hover:scale-110"
+            className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm text-foreground p-2 rounded-full hover:bg-background transition-all duration-200 hover:scale-110 z-10"
             onClick={(e) => e.stopPropagation()}
           >
             <Github size={20} />

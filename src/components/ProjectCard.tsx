@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -7,9 +7,10 @@ interface ProjectCardProps {
   image: string;
   link?: string;
   githubLink?: string;
+  liveLink?: string;
 }
 
-const ProjectCard = ({ title, description, tools, image, link, githubLink }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, tools, image, link, githubLink, liveLink }: ProjectCardProps) => {
   return (
     <div className="group bg-card border border-border rounded-xl overflow-hidden hover-lift hover-glow transition-all duration-300">
       <div className="relative overflow-hidden">
@@ -46,7 +47,7 @@ const ProjectCard = ({ title, description, tools, image, link, githubLink }: Pro
         <p className="text-muted-foreground mb-4 leading-relaxed">
           {description}
         </p>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 mb-6">
           {tools.map((tool, index) => (
             <span
               key={index}
@@ -55,6 +56,32 @@ const ProjectCard = ({ title, description, tools, image, link, githubLink }: Pro
               {tool}
             </span>
           ))}
+        </div>
+        
+        {/* Project Links */}
+        <div className="flex gap-4 pt-4 border-t border-border">
+          {githubLink && (
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-200 text-sm font-medium"
+            >
+              <Github size={16} />
+              <span>GitHub</span>
+            </a>
+          )}
+          {liveLink && (
+            <a
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-200 text-sm font-medium"
+            >
+              <ExternalLink size={16} />
+              <span>Live Link</span>
+            </a>
+          )}
         </div>
       </div>
     </div>

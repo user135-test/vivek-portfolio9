@@ -101,21 +101,24 @@ const Portfolio = () => {
       description: "Built a secure authentication system and lobby management flow for seamless meeting access. Designed and implemented a responsive UI workflow, ensuring smooth user navigation across devices. Integrated real-time peer-to-peer communication using WebRTC, achieving low-latency video calls and stable performance.",
       tools: ["React.js", "Node.js", "WebRTC", "Socket.io", "Material UI"],
       image: studyBuddyImage,
-      githubLink: "https://github.com/Vivek210404/EchoMeet"
+      githubLink: "https://github.com/Vivek210404/EchoMeet",
+      liveLink: "https://echomeetapp.onrender.com/"
     },
     {
       title: "Wanderlust – Hotel Listing Platform", 
       description: "A web-based platform for location-based hotel listings with real-time dynamic search, interactive cards, and geocoding integration.",
       tools: ["NodeJs", "ExpressJs", "MongoDB", "EJS"],
       image: wanderlustImage,
-      githubLink: "https://github.com/Vivek210404/Airbnb"
+      githubLink: "https://github.com/Vivek210404/Airbnb",
+      liveLink: "https://wanderlust-kkpd.onrender.com/"
     },
     {
       title: "AI Powered StudyBuddy Assistant",
       description: "AI-powered study partner for students providing roadmap generation and analysis with a user-friendly interface.",
       tools: ["React", "NodeJS", "ExpressJS", "Gemini"],
       image: studyBuddyImage,
-      githubLink: "https://github.com/Vivek210404/StudyBuddy"
+      githubLink: "https://github.com/Vivek210404/StudyBuddy",
+      liveLink: "https://studybuddy-3y3b.onrender.com/"
     }
   ];
 
